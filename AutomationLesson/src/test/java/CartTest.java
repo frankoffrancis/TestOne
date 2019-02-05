@@ -34,7 +34,7 @@ public class CartTest extends RDriver{
         NavigationPage.clickOnLSatInPerson();
         LSAT_In_Person_Page.enrollInMostPopularCourse();
         CartPage.removeItemFromCart();
-       // Assert.assertFalse(driver.findElement(By.xpath("/html/body/div[6]/form/div/div[1]/div[2]/div/div[1]/h3")).isDisplayed());
+       Assert.assertFalse(driver.findElement(By.xpath("/html/body/div[6]/form/div/div[1]/div[2]/div/div[1]/h3")).isDisplayed());
 
     }
 }

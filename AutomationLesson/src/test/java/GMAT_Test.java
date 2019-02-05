@@ -68,7 +68,7 @@ public class GMAT_Test extends RDriver {
         GMAT_Prep_Free_Page.selectALessonInPiecesOfThePuzzle("Pieces of the Puzzle Adaptive Lesson");
         Wait.sleep(5);
         driver.switchTo().frame("content-frame");
-//        Assert.assertTrue(driver.findElement(By.cssSelector("#content-player > div > div > div.modal-header")).isDisplayed());
+      Assert.assertTrue(driver.findElement(By.cssSelector("#\\36 gY8VQBbKf7\\2e 6Xnz9Lu0Ljj\\2e 67s5ApFvd7U > canvas")).isDisplayed());
 
     }
 }

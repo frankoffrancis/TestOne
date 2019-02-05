@@ -39,5 +39,16 @@ public class NavigationPage extends RDriver{
         Wait.waitForGraduatePrepSubListToDisplay();
         driver.findElement(By.xpath("//*[@id=\"desktopnav\"]/header/nav/div/div[2]/ul[1]/li[2]/div/div/div/div[1]/div/div[2]/ul/li[2]/a")).click();
     }
-    ////*[@id="Facility-0"]/div[2]/div[1]/div[3]/div/div[4]/a[2]
+   public static void clickOnCart(){
+            driver.findElement(By.cssSelector("#desktopnav > header > nav > div > div:nth-child(2) > ul.nav.navbar-nav.navbar-right > li:nth-child(3) > a"));
+   }
+
+   public static void clickOnACourceForSATHome(String course){
+
+       Actions builder = new Actions(driver);
+       builder.moveToElement(driver.findElement(By.linkText("College Prep"))).perform();
+       Wait.waitUntilElementIsDisplay("linktext","SAT Home");
+       driver.findElement(By.linkText(course)).click();
+
+   }
 }
